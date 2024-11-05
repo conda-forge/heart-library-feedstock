@@ -1,5 +1,5 @@
 {% set name = "heart-library" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/heart_library-{{ version }}.tar.gz
-  sha256: 205a9f5933256f8dc99700ffdd2ff4b128371ae9b23508b582b54f0031387871
+  sha256: 174465700fdc97cd39f8d435542b61c74c3fedabd1d61669eeaead4ab0a8f83a
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.9,<3.12
     - adversarial-robustness-toolbox >=1.17.1
-    - maite >=0.5.0
+    - maite >=0.6.0,<0.7.0
     - numpy >=1.18.5,<2
     - scikit-learn >=0.22.2
     - six
