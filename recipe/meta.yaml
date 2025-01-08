@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/heart_library-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/heart_library-{{ version }}.tar.gz
   sha256: 174465700fdc97cd39f8d435542b61c74c3fedabd1d61669eeaead4ab0a8f83a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9,<3.12
+    - python {{ python_min }}
     - poetry-core
     - pip
   run:
-    - python >=3.9,<3.12
+    - python >={{ python_min }},<3.12
     - adversarial-robustness-toolbox >=1.17.1
     - maite >=0.6.0,<0.7.0
     - numpy >=1.18.5,<2
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/IBM/heart-library
