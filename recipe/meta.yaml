@@ -1,13 +1,13 @@
 {% set name = "heart-library" %}
-{% set version = "0.4.4" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/heart_library-{{ version }}.tar.gz
-  sha256: 174465700fdc97cd39f8d435542b61c74c3fedabd1d61669eeaead4ab0a8f83a
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/heart_library-{{ version }}.tar.gz
+  sha256: b2c3aa0caebe27c6e55eb0a94b8929ec57d814158f6804319b377de2c39523ca
 
 build:
   noarch: python
