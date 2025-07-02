@@ -49,6 +49,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - heart-library
     - jxn11
     - kieranfraser
     - lockwoodar
