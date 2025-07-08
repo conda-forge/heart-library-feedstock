@@ -147,6 +147,3 @@ Feedstock Maintainers
 * [@kieranfraser](https://github.com/kieranfraser/)
 * [@lockwoodar](https://github.com/lockwoodar/)
 
-
-<!-- dummy commit to enable rerendering -->
-
