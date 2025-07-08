@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.9,<3.12
     - adversarial-robustness-toolbox >=1.19.1
-    - datasets >=3.2.0
+    - datasets >=3.2.0,<3.4.0
     - maite >=0.7.0
     - multiprocess >=0.70.0
     - numpy >=1.18.5,<2
